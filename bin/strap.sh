@@ -4,6 +4,8 @@
 set -e
 
 # Keep sudo timestamp updated while Strap is running.
+echo "by Platanus"
+
 if [ "$1" = "--sudo-wait" ]; then
   while true; do
     mkdir -p "/var/db/sudo/$SUDO_USER"
